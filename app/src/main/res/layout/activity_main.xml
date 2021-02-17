@@ -9,37 +9,35 @@
     <TextView
         android:id="@+id/zamanText"
         android:layout_width="220dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="63dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="32dp"
         android:text="Zaman: 15"
         android:textAlignment="center"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/skorText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/skorText"
         android:layout_width="220dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="157dp"
+        android:layout_height="53dp"
         android:text="Skor: 0"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/zamanText"
+        app:layout_constraintStart_toStartOf="@+id/zamanText"
         app:layout_constraintTop_toBottomOf="@+id/zamanText" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="154dp"
         android:layout_height="149dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginBottom="257dp"
+        android:layout_marginTop="120dp"
         android:onClick="skoruArttir"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/skorText"
         app:srcCompat="@drawable/trabzon" />
